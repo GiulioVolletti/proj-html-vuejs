@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+}
+header .top-header {
+  height: 60px;
+  background-color: #21333E;
+}
+header .display-contact {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .display-contact a {
+  color: #C0C3D0;
+  text-decoration: none;
+}
+header .display-contact i {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+header .display-contact ul {
+  list-style: none;
+}
+header .display-contact ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+header .bottom-header {
+  text-transform: uppercase;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  z-index: 3;
+}
+header .bottom-header h1 {
+  vertical-align: middle;
+  width: 50%;
+  display: inline-block;
+  color: #BFC2CF;
+}
+header .bottom-header h1 span {
+  color: #038483;
+  padding: 10px;
+  background-color: rgba(0, 165, 165, 0.3);
+  border-radius: 10px 0 0 10px;
+}
+header .bottom-header .fixed-link {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .bottom-header .fixed-link ul {
+  list-style: none;
+}
+header .bottom-header .fixed-link ul li {
+  padding: 5px 10px;
+  display: inline-block;
+}
+header .bottom-header .fixed-link ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main .wrapper-main {
+  min-height: 670px;
+  background-image: url("../img/hero-image.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+main .wrapper-main .lead-customer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+main .wrapper-main .lead-customer .lead-text-button {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .wrapper-main .lead-customer .lead-text-button h1 {
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+main .wrapper-main .lead-customer .lead-text-button h2 {
+  padding: 25px 0;
+  margin-bottom: 25px;
+}
+main .wrapper-main .lead-customer .lead-text-button .btn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+main .wrapper-main .lead-customer .lead-text-button .btn-green {
+  background-color: #058283;
+}
+main .wrapper-main .lead-customer .lead-text-button .btn-green:hover {
+  background-color: #00A6A6;
+}
+main .wrapper-main .lead-customer .lead-text-button .btn-trasparent {
+  border: 2px solid #00A6A6;
+}
+main .wrapper-main .lead-customer .lead-text-button .btn-trasparent:hover {
+  background-color: #00A6A6;
+}
