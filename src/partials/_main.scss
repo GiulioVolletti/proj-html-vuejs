@@ -1,4 +1,5 @@
 main{
+  // top main
   .wrapper-main {
     min-height: 670px;
     background-image: url($topWrapperMainBackground) ;
@@ -26,28 +27,70 @@ main{
           padding: 25px 0;
           margin-bottom: 25px;
         }
-        .btn {
-          color: white;
-          text-decoration: none;
-          text-transform: uppercase;
-          margin: 10px;
-          padding: 15px 25px;
-          border-radius: 5px;
-          &-green{
-            background-color: $brandColor;
-            &:hover {
-              background-color: $trasparentBrandColor;             
-            }
-          }
-          &-trasparent {
-            border: 2px solid $trasparentBrandColor;
-            &:hover {
-              background-color: $trasparentBrandColor;
-            }
-          }
-        }
-
+      @include buttonBrandStile
       }
     }
   }
+
+  // info
+  .info{
+    height: 600px;
+    background-color: #EEF4ED;
+    .first-info {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .first-info-content {
+        width: calc(90% / 3);
+        height: 300px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  .about {
+    height: 800px;
+    .company-about {
+      height: 100%;
+      width: 40%;
+      margin-left: 10%;
+      float: left;
+    }
+    img {
+      float: right;
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  .services {
+    height: 1200px;
+    background-color: #111117
+  }
+
+  .pricing {
+    height: 1000px;
+    background-color: #EEF4ED;
+  }
+
+  .last-news {
+    height: 800px;
+    background-color: #FFFFFF;
+  }
+
+  .subscribe {
+    height: 450px;
+    background-image: url($formSubscribe);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .form {
+    height: 840;
+    background-color: #FFFFFF;
+  }
+
 }

@@ -1,0 +1,40 @@
+footer {
+  .support-services{
+    height: 630px;
+    background-color: #111117;
+    .about-services-support {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      .footer-contain {
+        height: 340px;
+        width: calc(90% / 4);
+        &-black {
+          height: 340px;
+          width: calc(90% / 4);
+          background-color: #19191F;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: #0D0D11;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      color: $contactColor;
+      &:nth-child(2) {
+        float: right;
+        a {
+          color: $brandColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

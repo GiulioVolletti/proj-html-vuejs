@@ -28,7 +28,7 @@ header{
   .bottom-header {
     text-transform: uppercase;
     position: fixed;
-    top: 80px;
+    top: 90px;
     width: 100%;
     display: flex;
     z-index: 3;
@@ -37,6 +37,7 @@ header{
       width: 50%;
       display: inline-block;
       color: #BFC2CF;
+      cursor: pointer;
       span{
         color: #038483;
         padding: 10px;
@@ -50,6 +51,7 @@ header{
       ul {
         list-style: none;
         li {
+          @include buttonBrandStile;
           padding: 5px 10px;
           display: inline-block;
           a {
