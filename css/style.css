@@ -9,6 +9,10 @@
   margin: auto;
 }
 
+#wrapper-script {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   position: relative;
 }
@@ -23,7 +27,7 @@ header .display-contact {
   align-items: center;
 }
 header .display-contact a {
-  color: #C0C3D0;
+  color: #9FA1AC;
   text-decoration: none;
 }
 header .display-contact i {
@@ -154,6 +158,9 @@ header .bottomHeaderChange .fixed-link ul li a {
   text-decoration: none;
 }
 
+main h1 {
+  font-size: 50px;
+}
 main .wrapper-main {
   min-height: 670px;
   background-image: url("../img/hero-image.png");
@@ -176,11 +183,9 @@ main .wrapper-main .lead-customer .lead-text-button {
   justify-content: center;
   text-align: center;
 }
-main .wrapper-main .lead-customer .lead-text-button h1 {
-  padding: 25px 0;
-  text-transform: uppercase;
-}
-main .wrapper-main .lead-customer .lead-text-button h2 {
+main .wrapper-main .lead-customer .lead-text-button h3 {
+  color: #9FA1AC;
+  width: 60%;
   padding: 25px 0;
   margin-bottom: 25px;
 }
@@ -287,7 +292,7 @@ footer .copyright {
   justify-content: space-between;
 }
 footer .copyright span {
-  color: #C0C3D0;
+  color: #9FA1AC;
 }
 footer .copyright span:nth-child(2) {
   float: right;
