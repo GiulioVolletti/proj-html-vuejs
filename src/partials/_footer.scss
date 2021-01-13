@@ -76,4 +76,20 @@ footer {
       }
     }
   }
+
+  .fixed-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a {
+      color: #C1C1C1;
+      i {
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #19191C;
+      }
+    }
+  }
+
 }

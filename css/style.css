@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -436,4 +437,18 @@ footer .copyright span:nth-child(2) {
 footer .copyright span:nth-child(2) a {
   color: #058283;
   text-decoration: none;
+}
+footer .fixed-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+footer .fixed-arrow a {
+  color: #C1C1C1;
+}
+footer .fixed-arrow a i {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #19191C;
 }
