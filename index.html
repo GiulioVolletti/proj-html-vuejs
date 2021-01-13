@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- script vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- my css -->
@@ -9,167 +11,171 @@
     <title>Project Lead Customer</title>
   </head>
   <body>
+    <div id="wrapper-script">
+      <!-- header -->
+      <header>
+        <div class="top-header">
+          <div class="container display-contact">
+            <a href="#"><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</a>
 
-    <!-- header -->
-    <header>
-      <div class="top-header">
-        <div class="container display-contact">
-          <a href="#"><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</a>
-
-          <div class="website-contact">
-            <ul>
-              <li> <a href="#"><i class="fas fa-phone-alt"></i> +1 (305) 1234-5678</a> </li>
-              <li> <a href="#"><i class="fas fa-envelope"></i> hello@example.com</a> </li>
-              <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
-              <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
-              <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <nav class="bottom-header">
-        <div class="container">
-          <h1> <span>nex</span> gen </h1>
-
-          <div class="fixed-link">
-            <ul>
-              <li> <a href="#">home</a> </li>
-              <li> <a href="#">about</a> </li>
-              <li> <a href="#">service</a> </li>
-              <li> <a href="#">pricing</a> </li>
-              <li> <a href="#">blog</a> </li>
-              <li><a class="btn btn-green" href="#">get in touch</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- /header -->
-
-    <!-- main -->
-    <main>
-      <!-- top main -->
-      <section class="wrapper-main">
-        <div class="lead-customer">
-          <div class="container lead-text-button">
-            <h1>Lead ~ Customer</h1>
-            <h2>
-              Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services.
-            </h2>
-            <div>
-              <a class="btn btn-green" href="#">get in touch</a>
-              <a class="btn btn-trasparent" href="#">read more</a>
+            <div class="website-contact">
+              <ul>
+                <li> <a href="#"><i class="fas fa-phone-alt"></i> +1 (305) 1234-5678</a> </li>
+                <li> <a href="#"><i class="fas fa-envelope"></i> hello@example.com</a> </li>
+                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <!-- /top main -->
 
-      <!-- info -->
-      <section class="info">
-        <div class="container first-info">
-          <div class="first-info-content">
+        <nav :class="{bottomHeader: scrollPosition <= 60, bottomHeaderChange: scrollPosition > 60}" >
+          <div class="container">
+            <h1> <span>nex</span> gen </h1>
 
+            <div class="fixed-link">
+              <ul>
+                <li> <a href="#">home</a> </li>
+                <li> <a href="#">about</a> </li>
+                <li> <a href="#">service</a> </li>
+                <li> <a href="#">pricing</a> </li>
+                <li> <a href="#">blog</a> </li>
+                <li><a class="btn btn-green" href="#">get in touch</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="first-info-content">
+        </nav>
+      </header>
+      <!-- /header -->
 
+      <!-- main -->
+      <main>
+        <!-- top main -->
+        <section class="wrapper-main">
+          <div class="lead-customer">
+            <div class="container lead-text-button">
+              <h1>Lead ~ Customer</h1>
+              <h2>
+                Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services.
+              </h2>
+              <div>
+                <a class="btn btn-green" href="#">get in touch</a>
+                <a class="btn btn-trasparent" href="#">read more</a>
+              </div>
+            </div>
           </div>
-          <div class="first-info-content">
+        </section>
+        <!-- /top main -->
 
+        <!-- info -->
+        <section class="info">
+          <div class="container first-info">
+            <div class="first-info-content">
+
+            </div>
+            <div class="first-info-content">
+
+            </div>
+            <div class="first-info-content">
+
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- /info -->
+        </section>
+        <!-- /info -->
 
-      <!-- the company -->
-      <section class="about">
+        <!-- the company -->
+        <section class="about">
 
           <div class="company-about">
             <h1><span>The</span> Company</h1>
           </div>
 
-        <img src="img/about-3.jpg" alt="about">
-      </section>
-      <!-- /the company -->
+          <img src="img/about-3.jpg" alt="about">
+        </section>
+        <!-- /the company -->
 
-      <!-- services -->
-      <section class="services">
+        <!-- services -->
+        <section class="services">
 
-      </section>
-      <!-- /services -->
+        </section>
+        <!-- /services -->
 
-      <!-- pricing -->
-      <section class="pricing">
+        <!-- pricing -->
+        <section class="pricing">
 
-      </section>
-      <!-- /pricing -->
+        </section>
+        <!-- /pricing -->
 
-      <!-- last news -->
-      <section class="last-news">
+        <!-- last news -->
+        <section class="last-news">
 
-      </section>
-      <!-- /last news -->
+        </section>
+        <!-- /last news -->
 
-      <!-- subscribe -->
-      <section class="subscribe">
+        <!-- subscribe -->
+        <section class="subscribe">
 
-      </section>
-      <!-- /subscribe -->
+        </section>
+        <!-- /subscribe -->
 
-      <!-- form -->
-      <section>
+        <!-- form -->
+        <section>
 
-      </section>
-      <!-- /form -->
+        </section>
+        <!-- /form -->
 
-    </main>
-    <!-- /main -->
+      </main>
+      <!-- /main -->
 
-    <!-- footer -->
-    <footer>
-      <!-- about/services/support -->
-      <section class="support-services">
-        <div class="container about-services-support">
-          <!-- nex-gen-footer -->
-          <div class="footer-contain">
+      <!-- footer -->
+      <footer>
+        <!-- about/services/support -->
+        <section class="support-services">
+          <div class="container about-services-support">
+            <!-- nex-gen-footer -->
+            <div class="footer-contain">
+
+            </div>
+            <!-- /nex-gen-footer -->
+
+            <!-- about -->
+            <div class="footer-contain-black">
+
+            </div>
+            <!-- /about -->
+
+            <!-- services -->
+            <div class="footer-contain-black">
+
+            </div>
+            <!-- /services -->
+
+            <!-- support -->
+            <div class="footer-contain-black">
+
+            </div>
+            <!-- /support -->
 
           </div>
-          <!-- /nex-gen-footer -->
+        </section>
+        <!-- about/services/support -->
 
-          <!-- about -->
-          <div class="footer-contain-black">
-
+        <!-- copyright -->
+        <section class="copyright">
+          <div class="container">
+            <span>Enjoy the low price. We are tracking any intention of piracy.</span>
+            <span>© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</span>
           </div>
-          <!-- /about -->
+        </section >
+        <!-- /copyright -->
 
-          <!-- services -->
-          <div class="footer-contain-black">
+      </footer>
+      <!-- /footer -->
 
-          </div>
-          <!-- /services -->
+    </div>
 
-          <!-- support -->
-          <div class="footer-contain-black">
-
-          </div>
-          <!-- /support -->
-
-        </div>
-      </section>
-      <!-- about/services/support -->
-
-      <!-- copyright -->
-      <section class="copyright">
-        <div class="container">
-          <span>Enjoy the low price. We are tracking any intention of piracy.</span>
-          <span>© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</span>
-        </div>
-      </section >
-      <!-- /copyright -->
-
-    </footer>
-    <!-- /footer -->
-
+    <!-- my script -->
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

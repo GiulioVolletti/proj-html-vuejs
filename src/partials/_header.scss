@@ -1,4 +1,4 @@
-header{
+header {
   position: relative;
   .top-header {
     height: 60px;
@@ -25,41 +25,15 @@ header{
       }
     }
   }
-  .bottom-header {
-    text-transform: uppercase;
-    position: fixed;
-    top: 90px;
-    width: 100%;
-    display: flex;
-    z-index: 3;
-    h1 {
-      vertical-align: middle;
-      width: 50%;
-      display: inline-block;
-      color: #BFC2CF;
-      cursor: pointer;
-      span{
-        color: #038483;
-        padding: 10px;
-        background-color: rgba( 0, 165, 165, 0.3);
-        border-radius: 10px 0 0 10px;
-      }
-    }
-    .fixed-link{
-      display: inline-block;
-      vertical-align: middle;
-      ul {
-        list-style: none;
-        li {
-          @include buttonBrandStile;
-          padding: 5px 10px;
-          display: inline-block;
-          a {
-            color: white;
-            text-decoration: none;
-          }
-        }
-      }
+  .bottomHeader {
+    transition: 0.5s;
+    @include fixedBarChange;
+    &Change {
+      transition: 0.5s;
+      top: 0;
+      @include fixedBarChange;
+      background-color: #21333E;
     }
   }
+
 }
