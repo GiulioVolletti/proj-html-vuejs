@@ -4,7 +4,9 @@ const app = new Vue({
   el: '#wrapper-script',
 
   data: {
-    scrollPosition: null
+    scrollPosition: null,
+    telephoneNumber:  "+1 (305) 1234-5678",
+    contactEMail: " hello@example.com",
   },
 
   methods: {
@@ -19,11 +21,3 @@ const app = new Vue({
   }
 
 })
-
-
-// destroy() {
-//   window.removeEventListener('scroll', this.updateScroll)
-// }
-
-// <div :class="{classA: scrollPosition < 100, classB: scrollPosition > 100}">
-// </div>
