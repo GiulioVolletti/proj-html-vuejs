@@ -238,6 +238,9 @@ main .about img {
   float: right;
   width: 50%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 main .services {
   height: 1200px;
