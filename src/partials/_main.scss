@@ -4,7 +4,7 @@ main {
   }
   // top main
   .wrapper-main {
-    min-height: 670px;
+    min-height: 885px;
     background-image: url($topWrapperMainBackground) ;
     @include backGroundPosition;
     background-size: cover;
@@ -93,8 +93,27 @@ main {
   }
 
   .pricing {
-    height: 1000px;
+    height: 1100px;
     background-color: #EEF4ED;
+    text-align: center;
+    padding: 100px 0;
+    @include companyMainTextStile;
+    &-top{
+      width: 60%;
+      margin: auto;
+    }
+    &-bottom {
+      margin-top: 50px;
+      padding: 15px 0;
+      @include containerForElement;
+      height: 600px;
+      &-content {
+        height: 500px;
+      }
+      &-content:nth-child(2){
+        height: 600px;
+      }
+    }
   }
 
   .last-news {
