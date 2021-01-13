@@ -138,25 +138,42 @@
           <div class="container about-services-support">
             <!-- nex-gen-footer -->
             <div class="footer-contain">
+              <h1> <span>nex</span> gen </h1>
+              <p>A Functional HTML Template for Corporate & Business.</p>
+              <ul>
+                <li> <a href="#"><i class="fas fa-phone-alt"></i>{{telephoneNumber}}</a> </li>
+                <li> <a href="#"><i class="fas fa-envelope"></i>{{contactEMail}}</a> </li>
+                <li> <a href="#"><i class="fas fa-map-marker-alt"></i> {{companyAddress}}</a> </li>
+              </ul>
+              <a class="btn btn-trasparent" href="#">get in touch</a>
 
             </div>
             <!-- /nex-gen-footer -->
 
             <!-- about -->
             <div class="footer-contain-black">
-
+              <h1>About</h1>
+              <ul>
+                <li v-for="listone in footerLinkAbout"><a :href="listone.url"><i class="fas fa-chevron-right"></i> {{listone.name}}</a> </li>
+              </ul>
             </div>
             <!-- /about -->
 
             <!-- services -->
             <div class="footer-contain-black">
-
+              <h1>Services</h1>
+              <ul >
+                <li v-for="listtwo in footerLinkServices"><a :href="listtwo.url"><i class="fas fa-chevron-right"></i>  {{listtwo.name}} </a></li>
+              </ul>
             </div>
             <!-- /services -->
 
             <!-- support -->
             <div class="footer-contain-black">
-
+              <h1>Support</h1>
+              <ul>
+                <li v-for="listtree in footerLinkSupport"><a :href="listtree.url"><i class="fas fa-chevron-right"></i> {{listtree.name}}</a> </li>
+              </ul>
             </div>
             <!-- /support -->
 

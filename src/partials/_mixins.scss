@@ -2,8 +2,22 @@
    background-position: center;
 }
 
+@mixin companyLogoStile {
+  text-transform: uppercase;
+  color: #BFC2CF;
+  cursor: pointer;
+  span {
+    color: #038483;
+    padding: 5px 20px;
+    background-color: rgba( 0, 165, 165, 0.3);
+    border-radius: 25px 0 0 25px;
+    text-shadow: 0.2px 0.2px #000000;
+  }
+}
+
 @mixin buttonBrandStile {
   .btn {
+    text-align: center;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -36,14 +50,7 @@
     vertical-align: middle;
     width: 49%;
     display: inline-block;
-    color: #BFC2CF;
-    cursor: pointer;
-    span {
-      color: #038483;
-      padding: 10px;
-      background-color: rgba( 0, 165, 165, 0.3);
-      border-radius: 10px 0 0 10px;
-    }
+    @include companyLogoStile;
   }
   .fixed-link {
     width: 50.5%;

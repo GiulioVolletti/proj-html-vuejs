@@ -8,6 +8,84 @@ const app = new Vue({
     telephoneNumber:  "+1 (305) 1234-5678",
     contactEMail: " hello@example.com",
     companyAddress: "Main Avenue, 987",
+    footerLinkAbout: [
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+    ],
+    footerLinkServices: [
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+    ],
+    footerLinkSupport: [
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+      {
+        name: "The Company",
+        url: "#",
+      },
+    ],
   },
 
   methods: {

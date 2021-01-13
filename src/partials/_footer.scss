@@ -3,18 +3,57 @@ footer {
     height: 630px;
     background-color: #111117;
     .about-services-support {
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 100%;
       .footer-contain {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 340px;
         width: calc(90% / 4);
+        @include buttonBrandStile;
+        .btn {
+          margin-left: 0;
+          width: 65%;
+        }
+        p {
+          color: $contactColor;
+        }
+        h1 {
+          @include companyLogoStile;
+        }
+        ul {
+          list-style: none;
+          li {
+            padding: 5px 0;
+            a {
+              text-decoration: none;
+              color: $contactColor;
+            }
+          }
+        }
         &-black {
+          padding: 20px;
           height: 340px;
           width: calc(90% / 4);
           background-color: #19191F;
           border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          ul {
+            list-style: none;
+            li {
+              padding: 5px;
+              a {
+                color: $contactColor;
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
     }
