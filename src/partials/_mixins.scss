@@ -9,18 +9,10 @@
   color: white;
 }
 @mixin newsContainerOrder {
-  background-size: cover;
   height: 360px;
   position: relative;
-  .content {
-    @include imageAlphaContainer;
-    left: 0px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  background-size: cover;
+  .content {    
     h2 {
       order: 2;
     }
@@ -33,6 +25,15 @@
         color: white;
       }
     }
+    z-index: 1;
+    @include imageAlphaContainer;
+    left: 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     &:hover {
       h2 {
         order: 0;

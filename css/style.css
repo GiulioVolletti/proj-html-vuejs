@@ -378,11 +378,12 @@ main .last-news .news-container-content i {
 }
 main .last-news .news-container .content-one {
   background-image: url("../img/news-1.jpg");
-  background-size: cover;
   height: 360px;
   position: relative;
+  background-size: cover;
 }
 main .last-news .news-container .content-one .content {
+  z-index: 1;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -418,11 +419,12 @@ main .last-news .news-container .content-one .content:hover p {
 }
 main .last-news .news-container .content-two {
   background-image: url("../img/news-2.jpg");
-  background-size: cover;
   height: 360px;
   position: relative;
+  background-size: cover;
 }
 main .last-news .news-container .content-two .content {
+  z-index: 1;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -458,11 +460,12 @@ main .last-news .news-container .content-two .content:hover p {
 }
 main .last-news .news-container .content-tree {
   background-image: url("../img/news-3.jpg");
-  background-size: cover;
   height: 360px;
   position: relative;
+  background-size: cover;
 }
 main .last-news .news-container .content-tree .content {
+  z-index: 1;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -502,6 +505,80 @@ main .subscribe {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+main .subscribe .btn {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+main .subscribe .btn-green {
+  background-color: #058283;
+}
+main .subscribe .btn-green:hover {
+  background-color: #00A6A6;
+}
+main .subscribe .btn-trasparent {
+  border: 2px solid #00A6A6;
+}
+main .subscribe .btn-trasparent:hover {
+  background-color: #00A6A6;
+}
+main .subscribe-half {
+  padding: 50px;
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #BFC2CF;
+}
+main .subscribe-half span {
+  color: #038483;
+  padding: 5px 20px;
+  background-color: rgba(0, 165, 165, 0.3);
+  border-radius: 25px 0 0 25px;
+  text-shadow: 0.2px 0.2px #000000;
+  border-radius: 0;
+}
+main .subscribe-half h1 {
+  color: black;
+  margin: 20px 0;
+}
+main .subscribe-half p {
+  margin: 30px 0;
+}
+main .subscribe-half input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ECECEC;
+  border-radius: 5px;
+  border: 0;
+}
+main .subscribe-half input:focus {
+  outline: none;
+}
+main .subscribe-half .btn {
+  width: 30%;
+}
+main .subscribe-half h1 {
+  color: white;
+}
+main .subscribe-half span {
+  color: white;
+}
+main .subscribe-half p {
+  margin: 0;
+}
+main .subscribe .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+  display: flex;
 }
 main .bottom-main-form {
   height: 840px;
