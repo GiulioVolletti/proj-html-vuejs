@@ -1,6 +1,50 @@
 @mixin backGroundPosition {
    background-position: center;
 }
+@mixin imageAlphaContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+@mixin newsContainerOrder {
+  background-size: cover;
+  height: 360px;
+  position: relative;
+  .content {
+    @include imageAlphaContainer;
+    left: 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h2 {
+      order: 2;
+    }
+    p {
+      opacity: 0;
+      i {
+        padding-right: 5px;
+        background-color: inherit;
+        font-size: 12px;
+        color: white;
+      }
+    }
+    &:hover {
+      h2 {
+        order: 0;
+        transition: 0.2s;
+      }
+      p {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+  }
+}
 
 @mixin companyLogoStile {
   text-transform: uppercase;
@@ -25,8 +69,12 @@
     text-shadow: 0.2px 0.2px #000000;
     border-radius: 0;
   }
-  h1{
+  h1 {
     color: black;
+    margin: 20px 0;
+  }
+  p {
+    margin: 30px 0;
   }
 }
 
@@ -87,4 +135,33 @@
     }
   }
 
+}
+
+@mixin containerForElement{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-content {
+    padding: 45px;
+    width: calc(90% / 3);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    &:hover {
+      margin-top: -15px;
+      transition: 0.5s;
+    }
+    i {
+      font-size: 30px;
+      color: $brandColor;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: $secondTrasparentBrand;
+    }
+
+  }
 }

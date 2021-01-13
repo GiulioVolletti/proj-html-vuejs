@@ -10,11 +10,7 @@ main {
     background-size: cover;
     position: relative;
     .lead-customer{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
+      @include imageAlphaContainer;
       .lead-text-button {
         height: 100%;
         display: flex;
@@ -37,33 +33,13 @@ main {
   .info{
     height: 600px;
     background-color: #EEF4ED;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     .first-info {
-      height: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      .first-info-content {
-        padding: 45px;
-        width: calc(90% / 3);
+      @include containerForElement;
+      &-content{
         height: 300px;
-        border-radius: 10px;
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        &:hover {
-          margin-top: -15px;
-          transition: 0.5s;
-        }
-        i {
-          font-size: 30px;
-          color: $brandColor;
-          padding: 15px;
-          border-radius: 50%;
-          background-color: $secondTrasparentBrand;
-        }
-
       }
     }
   }
@@ -124,6 +100,28 @@ main {
   .last-news {
     height: 800px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include companyMainTextStile;
+    .news-container{
+      @include containerForElement;
+      width: 100%;
+      .content {
+        &-one {
+          background-image: url($contentOne);
+          @include newsContainerOrder;
+        }
+        &-two {
+          background-image: url($contentTwo);
+          @include newsContainerOrder;
+        }
+        &-tree {
+          background-image: url($contentTree);
+          @include newsContainerOrder;
+        }
+      }
+    }
   }
 
   .subscribe {
