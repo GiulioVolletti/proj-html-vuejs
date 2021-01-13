@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 65%;
   margin: auto;
 }
 
@@ -42,7 +42,6 @@ header .display-contact ul li {
   padding: 0 15px;
 }
 header .bottomHeader {
-  transition: 0.5s;
   text-transform: uppercase;
   position: fixed;
   width: 100%;
@@ -52,7 +51,7 @@ header .bottomHeader {
 }
 header .bottomHeader h1 {
   vertical-align: middle;
-  width: 50%;
+  width: 49%;
   display: inline-block;
   color: #BFC2CF;
   cursor: pointer;
@@ -64,10 +63,13 @@ header .bottomHeader h1 span {
   border-radius: 10px 0 0 10px;
 }
 header .bottomHeader .fixed-link {
+  width: 50.5%;
   display: inline-block;
   vertical-align: middle;
 }
 header .bottomHeader .fixed-link ul {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 header .bottomHeader .fixed-link ul li {
@@ -111,7 +113,7 @@ header .bottomHeaderChange {
 }
 header .bottomHeaderChange h1 {
   vertical-align: middle;
-  width: 50%;
+  width: 49%;
   display: inline-block;
   color: #BFC2CF;
   cursor: pointer;
@@ -123,10 +125,13 @@ header .bottomHeaderChange h1 span {
   border-radius: 10px 0 0 10px;
 }
 header .bottomHeaderChange .fixed-link {
+  width: 50.5%;
   display: inline-block;
   vertical-align: middle;
 }
 header .bottomHeaderChange .fixed-link ul {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 header .bottomHeaderChange .fixed-link ul li {

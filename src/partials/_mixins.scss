@@ -34,7 +34,7 @@
   z-index: 3;
   h1 {
     vertical-align: middle;
-    width: 50%;
+    width: 49%;
     display: inline-block;
     color: #BFC2CF;
     cursor: pointer;
@@ -46,9 +46,12 @@
     }
   }
   .fixed-link {
+    width: 50.5%;
     display: inline-block;
     vertical-align: middle;
     ul {
+      display: flex;
+      justify-content: space-between;
       list-style: none;
       li {
         @include buttonBrandStile;

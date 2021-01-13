@@ -26,7 +26,6 @@ header {
     }
   }
   .bottomHeader {
-    transition: 0.5s;
     @include fixedBarChange;
     &Change {
       transition: 0.5s;

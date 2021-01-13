@@ -13,7 +13,7 @@ const app = new Vue({
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY
-      console.log(this.scrollPosition);
+      // console.log(this.scrollPosition);
     }
   },
 
@@ -22,11 +22,3 @@ const app = new Vue({
   }
 
 })
-
-
-// destroy() {
-//   window.removeEventListener('scroll', this.updateScroll)
-// }
-
-// <div :class="{classA: scrollPosition < 100, classB: scrollPosition > 100}">
-// </div>
