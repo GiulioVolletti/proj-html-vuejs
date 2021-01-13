@@ -43,10 +43,27 @@ main {
       justify-content: space-around;
       align-items: center;
       .first-info-content {
+        padding: 45px;
         width: calc(90% / 3);
         height: 300px;
         border-radius: 10px;
         background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        &:hover {
+          margin-top: -15px;
+          transition: 0.5s;
+        }
+        i {
+          font-size: 30px;
+          color: $brandColor;
+          padding: 15px;
+          border-radius: 50%;
+          background-color: $secondTrasparentBrand;
+        }
+
       }
     }
   }
@@ -54,10 +71,36 @@ main {
   .about {
     height: 800px;
     .company-about {
-      height: 100%;
-      width: 40%;
-      margin-left: 10%;
+      padding: 30px 45px 30px 0;
+      width: 50%;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       float: left;
+      @include companyMainTextStile;
+      .mini-contain {
+        margin-top: 50px;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .company-mini-contain {
+          margin-bottom: 20px;
+          width: 50%;
+          h2 {
+            vertical-align: middle;
+          }
+          i {
+            color: $trasparentBrandColor;
+            font-size: 18px;
+            padding-bottom: 20px;
+          }
+          p {
+            color: $trasparentBrandColor;
+          }
+        }
+      }
     }
     img {
       float: right;

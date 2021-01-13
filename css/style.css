@@ -232,19 +232,72 @@ main .info .first-info {
   align-items: center;
 }
 main .info .first-info .first-info-content {
+  padding: 45px;
   width: calc(90% / 3);
   height: 300px;
   border-radius: 10px;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .info .first-info .first-info-content:hover {
+  margin-top: -15px;
+  transition: 0.5s;
+}
+main .info .first-info .first-info-content i {
+  font-size: 30px;
+  color: #058283;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #DAECED;
 }
 main .about {
   height: 800px;
 }
 main .about .company-about {
-  height: 100%;
-  width: 40%;
-  margin-left: 10%;
+  padding: 30px 45px 30px 0;
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   float: left;
+  color: #BFC2CF;
+}
+main .about .company-about span {
+  color: #038483;
+  padding: 5px 20px;
+  background-color: rgba(0, 165, 165, 0.3);
+  border-radius: 25px 0 0 25px;
+  text-shadow: 0.2px 0.2px #000000;
+  border-radius: 0;
+}
+main .about .company-about h1 {
+  color: black;
+}
+main .about .company-about .mini-contain {
+  margin-top: 50px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .about .company-about .mini-contain .company-mini-contain {
+  margin-bottom: 20px;
+  width: 50%;
+}
+main .about .company-about .mini-contain .company-mini-contain h2 {
+  vertical-align: middle;
+}
+main .about .company-about .mini-contain .company-mini-contain i {
+  color: #00A6A6;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+main .about .company-about .mini-contain .company-mini-contain p {
+  color: #00A6A6;
 }
 main .about img {
   float: right;
