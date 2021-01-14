@@ -799,6 +799,15 @@ main .bottom-main-form .display-form .form-container .form #form-message {
 main .bottom-main-form .display-form .form-container .form #form-message:focus {
   outline: none;
 }
+main .bottom-main-form .display-form .form-container .form #form-message::-moz-placeholder {
+  padding: 10px;
+}
+main .bottom-main-form .display-form .form-container .form #form-message:-ms-input-placeholder {
+  padding: 10px;
+}
+main .bottom-main-form .display-form .form-container .form #form-message::placeholder {
+  padding: 10px;
+}
 main .bottom-main-form .display-form .form-container .form input {
   padding: 15px;
   width: calc(95% /2);
@@ -809,6 +818,7 @@ main .bottom-main-form .display-form .form-container .form input {
 }
 main .bottom-main-form .display-form .form-container .form input:focus {
   outline: none;
+  font-family: "Poppins", sans-serif;
 }
 main .bottom-main-form .display-form .form-container .form select {
   padding: 15px;

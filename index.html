@@ -39,11 +39,7 @@
 
             <div class="fixed-link">
               <ul>
-                <li> <a href="#">home</a> </li>
-                <li> <a href="#">about</a> </li>
-                <li> <a href="#">service</a> </li>
-                <li> <a href="#">pricing</a> </li>
-                <li> <a href="#">blog</a> </li>
+                <li v-for="navItem in navBarFixed"> <a :href="navItem.link">{{navItem.name}}</a> </li>
                 <li><a class="btn btn-green" href="#">get in touch</a></li>
               </ul>
             </div>
@@ -299,7 +295,7 @@
                 <select  name="selection">
                   <option value="">More info</option>
                 </select>
-                <input id="form-message" type="text" name="message" value="" placeholder="message">
+                <textarea id="form-message" type="text" name="message" value="" placeholder=" Message"></textarea>
                 <a class="btn btn-green" href="#">Send</a>
               </form>
             </div>

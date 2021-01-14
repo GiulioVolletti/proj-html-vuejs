@@ -8,81 +8,103 @@ const app = new Vue({
     telephoneNumber:  "+1 (305) 1234-5678",
     contactEMail: " hello@example.com",
     companyAddress: "Main Avenue, 987",
+    navBarFixed: [
+      {
+        name: "home",
+        link: "#",
+      },
+      {
+        name: "about",
+        link: "#",
+      },
+      {
+        name: "service",
+        link: "#",
+      },
+      {
+        name: "pricing",
+        link: "#",
+      },
+      {
+        name: "blog",
+        link: "#",
+      },
+    ],
     footerLinkAbout: [
       {
         name: "The Company",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Institutional",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Social & Events",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Innovation",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Environment",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Technology",
         url: "#",
       },
     ],
     footerLinkServices: [
       {
-        name: "The Company",
+        name: "Audit & Assurance",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Financial Advisory",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Analytics M&A",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Middle Marketing",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Legal Consulting",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Regulatory Risk",
         url: "#",
       },
     ],
     footerLinkSupport: [
       {
-        name: "The Company",
+        name: "Responsibility",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Terms of Use",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "About Cookies",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Privacy Policy",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Accessibility",
         url: "#",
       },
       {
-        name: "The Company",
+        name: "Information",
         url: "#",
       },
     ],

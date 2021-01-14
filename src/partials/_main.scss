@@ -315,6 +315,9 @@ main {
             &:focus {
               outline: none;
             }
+            &::placeholder {
+              padding: 10px;
+            }
           }
           input {
             padding: 15px;
@@ -325,6 +328,7 @@ main {
             border: 0;
             &:focus {
               outline: none;
+              font-family: "Poppins", sans-serif;
             }
           }
           select {
