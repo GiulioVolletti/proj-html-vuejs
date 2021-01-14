@@ -13,8 +13,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         height: 340px;
-        width: calc(90% / 4);
-        @include buttonBrandStile;
+        width: calc(90% / 4);      
         .btn {
           margin-left: 0;
           width: 65%;
