@@ -946,6 +946,9 @@ main .bottom-main-form .display-form .example-inc .btn {
   color: #058283;
   width: 40%;
 }
+main .bottom-main-form .display-form .example-inc .btn:hover {
+  color: white;
+}
 
 footer .support-services {
   height: 630px;

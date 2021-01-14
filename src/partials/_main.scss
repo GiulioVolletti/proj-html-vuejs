@@ -437,6 +437,9 @@ main {
         .btn {
           color: $brandColor;
           width: 40%;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
