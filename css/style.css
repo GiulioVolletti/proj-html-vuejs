@@ -453,6 +453,14 @@ main .pricing h1 {
 main .pricing p {
   margin: 30px 0;
 }
+main .pricing .fa-arrow-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 20px;
+  font-size: 25px;
+  opacity: 0;
+}
 main .pricing-top {
   width: 60%;
   margin: auto;
@@ -488,11 +496,15 @@ main .pricing-bottom-content i {
   background-color: #DAECED;
 }
 main .pricing-bottom-content {
-  cursor: pointer;
   align-items: center;
   text-align: center;
   height: 500px;
   position: relative;
+}
+main .pricing-bottom-content:hover .fa-arrow-right {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.8s;
 }
 main .pricing-bottom-content h3 {
   color: #058283;
