@@ -46,6 +46,10 @@ footer {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          &:hover {
+            margin-top: -15px;
+            transition: 0.5s;
+          }
           ul {
             list-style: none;
             li {

@@ -166,9 +166,19 @@ main {
       @include containerForElement;
       height: 600px;
       &-content {
+        cursor: pointer;
         align-items: center;
         text-align: center;
         height: 500px;
+        position: relative;
+        h3 {
+          color: $brandColor;
+          span {
+            background-color: inherit;
+            font-size: 35px;
+            padding: 0;
+          }
+        }
         p {
           margin: 0;
         }
@@ -201,8 +211,20 @@ main {
           }
         }
       }
+      .most-popular {
+        font-size: 12px;
+        color: white;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        padding: 5px 20px 5px 10px;
+        text-align: left;
+        background-color: $trasparentBrandColor;
+        border-radius: 0 25px 25px 0;
+      }
       &-content:nth-child(2){
-        height: 600px;
+        height: 550px;
       }
     }
   }
@@ -218,6 +240,7 @@ main {
       @include containerForElement;
       width: 100%;
       .content {
+        cursor: pointer;
         .blur-content{
           position: absolute;
           top: 0;

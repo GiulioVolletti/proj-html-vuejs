@@ -488,9 +488,19 @@ main .pricing-bottom-content i {
   background-color: #DAECED;
 }
 main .pricing-bottom-content {
+  cursor: pointer;
   align-items: center;
   text-align: center;
   height: 500px;
+  position: relative;
+}
+main .pricing-bottom-content h3 {
+  color: #058283;
+}
+main .pricing-bottom-content h3 span {
+  background-color: inherit;
+  font-size: 35px;
+  padding: 0;
 }
 main .pricing-bottom-content p {
   margin: 0;
@@ -522,8 +532,20 @@ main .pricing-bottom-content ul li span {
   color: #058283;
   padding: 0;
 }
+main .pricing-bottom .most-popular {
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 5px 20px 5px 10px;
+  text-align: left;
+  background-color: #00A6A6;
+  border-radius: 0 25px 25px 0;
+}
 main .pricing-bottom-content:nth-child(2) {
-  height: 600px;
+  height: 550px;
 }
 main .last-news {
   height: 800px;
@@ -575,6 +597,9 @@ main .last-news .news-container-content i {
   padding: 15px;
   border-radius: 50%;
   background-color: #DAECED;
+}
+main .last-news .news-container .content {
+  cursor: pointer;
 }
 main .last-news .news-container .content .blur-content {
   position: absolute;
@@ -969,6 +994,10 @@ footer .support-services .about-services-support .footer-contain-black {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+footer .support-services .about-services-support .footer-contain-black:hover {
+  margin-top: -15px;
+  transition: 0.5s;
 }
 footer .support-services .about-services-support .footer-contain-black ul {
   list-style: none;
