@@ -12,6 +12,9 @@ header {
     a {
       color: $contactColor;
       text-decoration: none;
+      &:hover {
+        color:$brandColor
+      }
     }
     i {
       padding-right:5px;

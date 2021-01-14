@@ -30,6 +30,7 @@ const app = new Vue({
         link: "#",
       },
     ],
+    infoDropdown:["Info 1", "Info 2", "Info 3"],
     footerLinkAbout: [
       {
         name: "The Company",

@@ -239,6 +239,7 @@
             <div class="news-container">
               <div class="news-container-content content-one">
                 <div class="content">
+                  <div class="blur-content"></div>
                   <p><i class="far fa-user"></i> Andrea Miller    <i class="far fa-clock"></i> 2 Days Ago</p>
                   <h2>Increasing creativity is possible for everyone</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
@@ -246,6 +247,7 @@
               </div>
               <div class="news-container-content content-two">
                 <div class="content">
+                  <div class="blur-content"></div>
                   <p><i class="far fa-user"></i> Andrea Miller    <i class="far fa-clock"></i> 2 Days Ago</p>
                   <h2>Increasing creativity is possible for everyone</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
@@ -253,6 +255,7 @@
               </div>
               <div class="news-container-content content-tree">
                 <div class="content">
+                  <div class="blur-content"></div>
                   <p><i class="far fa-user"></i> Andrea Miller    <i class="far fa-clock"></i> 2 Days Ago</p>
                   <h2>Increasing creativity is possible for everyone</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
@@ -273,7 +276,7 @@
             </div>
 
             <form class="subscribe-half" action="index.html" method="post">
-              <input type="text" name="name" value="" placeholder="name" required>
+              <input type="text" name="name" value="" placeholder="Name" required>
               <input type="email" name="email-subscribe" value="" placeholder="Email" required>
               <input id="subscribe" type="submit" class="btn btn-green" href="#" value="Subscribe"></input>
             </form>
@@ -294,6 +297,7 @@
                 <input type="text" name="username" value="" placeholder="Phone">
                 <select  name="selection">
                   <option value="">More info</option>
+                  <option v-for="info in infoDropdown" :value="info">{{info}}</option>
                 </select>
                 <textarea id="form-message" type="text" name="message" value="" placeholder=" Message"></textarea>
                 <a class="btn btn-green" href="#">Send</a>
