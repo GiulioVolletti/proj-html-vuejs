@@ -12,7 +12,7 @@
   height: 360px;
   position: relative;
   background-size: cover;
-  .content {    
+  .content {
     h2 {
       order: 2;
     }
@@ -128,9 +128,15 @@
         @include buttonBrandStile;
         padding: 5px 10px;
         display: inline-block;
+        &:last-child {
+          padding-right: 0; 
+        }
         a {
           color: white;
           text-decoration: none;
+        }
+        .btn {
+          margin-right: 0;
         }
       }
     }

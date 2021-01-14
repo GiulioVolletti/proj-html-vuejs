@@ -166,7 +166,40 @@ main {
       @include containerForElement;
       height: 600px;
       &-content {
+        align-items: center;
+        text-align: center;
         height: 500px;
+        p {
+          margin: 0;
+        }
+        h2 {
+          color: black;
+        }
+        i  {
+          font-size: 14px;
+          background-color: inherit;
+          padding: 0;
+          vertical-align: middle;
+          line-height: 50px;
+          &:first-child {
+            font-size: 40px;
+
+          }
+        }
+        ul {
+          width: 100%;
+          list-style: none;
+          li {
+            display: flex;
+            justify-content: space-between;
+            span {
+              line-height: 50px;
+              background-color: inherit;
+              color: $brandColor;
+              padding: 0;
+            }
+          }
+        }
       }
       &-content:nth-child(2){
         height: 600px;
