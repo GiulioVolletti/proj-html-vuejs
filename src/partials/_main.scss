@@ -203,8 +203,7 @@ main {
     .fa-arrow-right {
       position: absolute;
       top: 15px;
-      right: 15px;
-      padding: 20px;
+      right: 35px;
       font-size: 25px;
       opacity: 0;
     }
@@ -228,6 +227,8 @@ main {
           cursor: pointer;
           opacity: 1;
           transition: 0.8s;
+          animation-name: boxshadow;
+          animation-duration: 1s;
         }
         h3 {
           color: $brandColor;

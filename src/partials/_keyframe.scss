@@ -17,3 +17,17 @@
   from {font-size: 10px; opacity: 0}
   to {width: 50%; opacity: 1}
 }
+
+@keyframes boxshadow {
+  from {
+    background-color: $trasparentBrandColor;
+    padding: 0 15px;
+    right: 20px;
+  }
+  to {
+    background-color: white;
+    padding: 0 15px;
+    right: 20px;
+  }
+
+}
