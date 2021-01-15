@@ -94,15 +94,22 @@ header .bottomHeader .fixed-link {
   width: 50.5%;
   display: inline-block;
   vertical-align: middle;
+  height: 100%;
 }
 header .bottomHeader .fixed-link ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 header .bottomHeader .fixed-link ul li {
   padding: 5px 10px;
   display: inline-block;
+  height: 100%;
+  line-height: 60px;
+  cursor: pointer;
 }
 header .bottomHeader .fixed-link ul li .btn {
   text-align: center;
@@ -135,11 +142,16 @@ header .bottomHeader .fixed-link ul li a {
   color: white;
   text-decoration: none;
 }
-header .bottomHeader .fixed-link ul li a:hover {
+header .bottomHeader .fixed-link ul li:hover a {
   color: #058283;
 }
 header .bottomHeader .fixed-link ul li .btn {
   margin-right: 0;
+}
+header .bottomHeader .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 header .bottomHeaderChange {
   transition: 0.5s;
@@ -171,15 +183,22 @@ header .bottomHeaderChange .fixed-link {
   width: 50.5%;
   display: inline-block;
   vertical-align: middle;
+  height: 100%;
 }
 header .bottomHeaderChange .fixed-link ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 header .bottomHeaderChange .fixed-link ul li {
   padding: 5px 10px;
   display: inline-block;
+  height: 100%;
+  line-height: 60px;
+  cursor: pointer;
 }
 header .bottomHeaderChange .fixed-link ul li .btn {
   text-align: center;
@@ -212,11 +231,21 @@ header .bottomHeaderChange .fixed-link ul li a {
   color: white;
   text-decoration: none;
 }
-header .bottomHeaderChange .fixed-link ul li a:hover {
+header .bottomHeaderChange .fixed-link ul li:hover a {
   color: #058283;
 }
 header .bottomHeaderChange .fixed-link ul li .btn {
   margin-right: 0;
+}
+header .bottomHeaderChange li:last-child {
+  padding-right: 0;
+}
+header .bottomHeaderChange li:last-child:hover {
+  background-color: #21333E;
+}
+header .bottomHeaderChange li:hover {
+  background-color: white;
+  transition: 0.5s;
 }
 
 main h1 {

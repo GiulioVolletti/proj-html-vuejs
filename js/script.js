@@ -8,6 +8,23 @@ const app = new Vue({
     telephoneNumber:  "+1 (305) 1234-5678",
     contactEMail: " hello@example.com",
     companyAddress: "Main Avenue, 987",
+    socialLink: [
+      {
+        tipe: "Facebook",
+        iconClass: "fab fa-facebook-f",
+        url: "#",
+      },
+      {
+        tipe: "Twitter",
+        iconClass: "fab fa-twitter",
+        url: "#",
+      },
+      {
+        tipe: "Linkedin",
+        iconClass: "fab fa-linkedin-in",
+        url: "#",
+      },
+    ],
     navBarFixed: [
       {
         name: "home",

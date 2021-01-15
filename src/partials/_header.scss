@@ -30,11 +30,29 @@ header {
   }
   .bottomHeader {
     @include fixedBarChange;
+    .container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
     &Change {
       transition: 0.5s;
       top: 0;
       @include fixedBarChange;
       background-color: #21333E;
+      li {
+        &:last-child {
+          padding-right: 0;
+          &:hover {
+            background-color: #21333E;
+          }
+        }
+        &:hover {
+          background-color: white;
+          transition: 0.5s;
+        }
+      }
+
     }
   }
 

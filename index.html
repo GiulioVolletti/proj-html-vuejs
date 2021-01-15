@@ -25,9 +25,7 @@
               <ul>
                 <li> <a href="#"><i class="fas fa-phone-alt"></i>{{telephoneNumber}}</a> </li>
                 <li> <a href="#"><i class="fas fa-envelope"></i>{{contactEMail}}</a> </li>
-                <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
-                <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
-                <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+                <li v-for="social in socialLink"> <a :href="social.url"><i :class="social.iconClass"></i></a> </li>                
               </ul>
             </div>
           </div>

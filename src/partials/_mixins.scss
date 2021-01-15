@@ -120,14 +120,21 @@
     width: 50.5%;
     display: inline-block;
     vertical-align: middle;
+    height: 100%;
     ul {
       display: flex;
       justify-content: space-between;
       list-style: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
       li {
         @include buttonBrandStile;
         padding: 5px 10px;
         display: inline-block;
+        height: 100%;
+        line-height: 60px;
+        cursor: pointer;
         &:last-child {
           padding-right: 0;
         }
@@ -137,9 +144,9 @@
         a {
           color: white;
           text-decoration: none;
-          &:hover {
-            color:$brandColor
-          }
+        }
+        &:hover a {
+          color:$brandColor;
         }
         .btn {
           margin-right: 0;
