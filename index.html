@@ -352,7 +352,7 @@
             <div class="footer-contain-black">
               <h1>About</h1>
               <ul>
-                <li v-for="(listone, indexone) in footerLinkAbout"><a @mouseover="mouseEnterClassChange(listone, indexone)" @mouseleave = "mouseLeave" :href="listone.url"><i :class="{'fa-angle-double-right': classIndex == listone.name + indexone, 'fa-chevron-right': classIndex != listone.name + indexone}" class="fas "></i> {{listone.name}}</a> </li>
+                <li v-for="listone in footerLinkAbout"><a @mouseover="mouseEnterClassChange(listone)" @mouseleave = "mouseLeave" :href="listone.url"><i :class="{'fa-angle-double-right': classIndex == listone.name, 'fa-chevron-right': classIndex != listone.name }" class="fas "></i> {{listone.name}}</a> </li>
               </ul>
             </div>
             <!-- /about -->
@@ -361,7 +361,7 @@
             <div class="footer-contain-black">
               <h1>Services</h1>
               <ul >
-                <li v-for="(listtwo, indextwo) in footerLinkServices"><a @mouseover="mouseEnterClassChange(listtwo, indextwo)" @mouseleave = "mouseLeave" :href="listtwo.url"><i :class="{'fa-angle-double-right': classIndex == listtwo.name + indextwo, 'fa-chevron-right': classIndex != listtwo.name + indextwo}" class="fas "></i>  {{listtwo.name}} </a></li>
+                <li v-for="listtwo in footerLinkServices"><a @mouseover="mouseEnterClassChange(listtwo)" @mouseleave = "mouseLeave" :href="listtwo.url"><i :class="{'fa-angle-double-right': classIndex == listtwo.name, 'fa-chevron-right': classIndex != listtwo.name }" class="fas "></i>  {{listtwo.name}} </a></li>
               </ul>
             </div>
             <!-- /services -->
@@ -370,7 +370,7 @@
             <div class="footer-contain-black">
               <h1>Support</h1>
               <ul>
-                <li v-for="(listthree, indexthree) in footerLinkSupport"><a @mouseover="mouseEnterClassChange(listthree, indexthree)" @mouseleave = "mouseLeave" :href="listthree.url"><i :class="{'fa-angle-double-right': classIndex == listthree.name + indexthree, 'fa-chevron-right': classIndex != listthree.name + indexthree}" class="fas "></i> {{listthree.name}}</a> </li>
+                <li v-for="listthree in footerLinkSupport"><a @mouseover="mouseEnterClassChange(listthree)" @mouseleave = "mouseLeave" :href="listthree.url"><i :class="{'fa-angle-double-right': classIndex == listthree.name , 'fa-chevron-right': classIndex != listthree.name }" class="fas "></i> {{listthree.name}}</a> </li>
               </ul>
             </div>
             <!-- /support -->
