@@ -31,6 +31,9 @@ footer {
             a {
               text-decoration: none;
               color: $contactColor;
+              i {
+                margin-right: 10px;
+              }
               &:hover {
                 color:$brandColor
               }
