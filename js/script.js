@@ -130,9 +130,8 @@ const app = new Vue({
   },
 
   methods: {
-    mouseEnterClassChange (position){
-      this.classIndex = position;
-      // console.log(this.classIndex);
+    mouseEnterClassChange (list, position){
+      this.classIndex = list.name + position;      
     },
     mouseLeave () {
       this.classIndex = null;
