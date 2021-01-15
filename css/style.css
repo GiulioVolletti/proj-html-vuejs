@@ -434,6 +434,10 @@ main .services-top-container {
   width: 70%;
   height: 100%;
   color: white;
+  -webkit-animation-name: showContain;
+          animation-name: showContain;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 main .services-top-container span {
   padding: 5px 20px;
@@ -989,12 +993,14 @@ main .bottom-main-form .display-form .form-container .form select {
   background-color: #ECECEC;
   border-radius: 5px;
   border: 0;
+  font-size: 14px;
   color: #9FA1AC;
 }
 main .bottom-main-form .display-form .form-container .form select:focus {
   outline: none;
 }
 main .bottom-main-form .display-form .form-container .form select option {
+  font-size: 14px;
   color: #9FA1AC;
 }
 main .bottom-main-form .display-form .form-container .form .btn {
@@ -1178,18 +1184,18 @@ footer .fixed-arrow a i {
 }
 @-webkit-keyframes showContain {
   from {
-    height: 0%;
+    margin-top: 250px;
   }
   to {
-    height: 300px;
+    margin-top: 0;
   }
 }
 @keyframes showContain {
   from {
-    height: 0%;
+    margin-top: 250px;
   }
   to {
-    height: 300px;
+    margin-top: 0;
   }
 }
 @-webkit-keyframes immageFadein {

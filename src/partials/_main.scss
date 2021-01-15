@@ -8,6 +8,7 @@ main {
       animation-duration: 2s;
     }
   }
+
   // top main
   .wrapper-main {
     min-height: 885px;
@@ -54,6 +55,7 @@ main {
     }
   }
 
+  // about
   .about {
     height: 800px;
     position: relative;
@@ -124,6 +126,7 @@ main {
     }
   }
 
+  // service
   .services {
     height: 1200px;
     background-color: #111117;
@@ -134,6 +137,8 @@ main {
         width: 70%;
         height: 100%;
         color: white;
+        animation-name: showContain;
+        animation-duration: 1.5s;
         span {
           padding: 5px 20px;
           background-color: rgba( 0, 165, 165, 0.3);
@@ -188,6 +193,7 @@ main {
     }
   }
 
+  // pricing
   .pricing {
     height: 1100px;
     background-color: #EEF4ED;
@@ -281,6 +287,7 @@ main {
     }
   }
 
+  // last-news
   .last-news {
     height: 800px;
     background-color: #FFFFFF;
@@ -328,6 +335,7 @@ main {
     }
   }
 
+  // subscribe
   .subscribe {
     height: 450px;
     background-image: url($formSubscribe);
@@ -381,6 +389,7 @@ main {
     }
   }
 
+  // bottom main
   .bottom-main-form {
     height: 840px;
     width: 100%;
@@ -439,11 +448,13 @@ main {
             background-color: #ECECEC;
             border-radius: 5px;
             border: 0;
+            font-size: 14px;
             color: $contactColor;
             &:focus {
               outline: none;
             }
             option {
+              font-size: 14px;
               color: $contactColor;
             }
           }
