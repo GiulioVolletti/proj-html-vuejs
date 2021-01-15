@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Project Lead Customer</title>
@@ -54,7 +54,7 @@
             <div class="container lead-text-button">
               <h1>Lead ~ Customer</h1>
               <h3>
-                Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services.
+                Successful strategies require data analysis, creativity and customer focus, <br> taking advantage of the latest technologies to offer excellent services.
               </h3>
               <div>
                 <a class="btn btn-green" href="#">get in touch</a>
@@ -67,18 +67,18 @@
 
         <!-- info -->
         <section class="info">
-          <div class="container first-info">
-            <div class="first-info-content">
+          <div  class="container first-info">
+            <div  v-show=" scrollPosition > 160 " class="first-info-content">
               <i class="fas fa-user-friends"></i>
               <h2>Human Capital</h2>
               <p>Humanizing business: Harness the power of technology to improve the way people work.</p>
             </div>
-            <div class="first-info-content">
+            <div v-show=" scrollPosition > 160 " class="first-info-content">
               <i class="fas fa-chart-pie"></i>
               <h2>Core Business</h2>
               <p>It takes innovative approaches to transform, modernize, and run existing platforms.</p>
             </div>
-            <div class="first-info-content">
+            <div v-show=" scrollPosition > 160 " class="first-info-content">
               <i class="fas fa-tachometer-alt"></i>
               <h2>Performance</h2>
               <p>Achieving maximum impact and value from investments in finance and supply chain.</p>
@@ -91,10 +91,10 @@
         <section class="about">
           <div class="container">
 
-            <div class="company-about">
+            <div v-show="animationAbout" class="company-about">
               <p>ABOUT THE NETWORK</p>
               <h1><span>The</span> Company</h1>
-              <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
+              <p>For 12 years we have been providing audit and warranty, financial <br> advice, risk advice, taxes and related services to select clients.</p>
               <div class="mini-contain">
                 <div class="company-mini-contain">
                   <h2><i class="fas fa-award"></i> Tradition</h2>
@@ -117,7 +117,7 @@
           </div>
 
 
-          <img src="img/about-3.jpg" alt="about">
+          <img v-show="animationAbout" src="img/about-3.jpg" alt="about">
         </section>
         <!-- /the company -->
 
@@ -179,10 +179,10 @@
         <!-- pricing -->
         <section class="pricing">
           <div class="container ">
-            <div class="pricing-top">
+            <div v-show= "animationPrice" class="pricing-top">
               <p>MONTHLY PLANS</p>
               <h1><span>Pricing</span>  Table</h1>
-              <p>We can help you deliver and execute your future, wherever you compete, using the latest technologies, from strategy development to implementation.</p>
+              <p>We can help you deliver and execute your future, wherever you compete, using the latest <br> technologies, from strategy development to implementation.</p>
             </div>
             <div class="pricing-bottom">
               <div class="pricing-bottom-content">

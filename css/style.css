@@ -251,6 +251,14 @@ header .bottomHeaderChange li:hover {
 main h1 {
   font-size: 50px;
 }
+main h1:first-child {
+  font-size: 80px;
+  font-weight: 900;
+  -webkit-animation-name: enterFont;
+          animation-name: enterFont;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
 main .wrapper-main {
   min-height: 885px;
   background-image: url("../img/hero-image.png");
@@ -272,12 +280,17 @@ main .wrapper-main .lead-customer .lead-text-button {
   align-items: center;
   justify-content: center;
   text-align: center;
+  -webkit-animation-name: enterFont;
+          animation-name: enterFont;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 main .wrapper-main .lead-customer .lead-text-button h3 {
   color: #9FA1AC;
   width: 60%;
   padding: 25px 0;
   margin-bottom: 25px;
+  font-weight: 100;
 }
 main .info {
   height: 600px;
@@ -315,6 +328,10 @@ main .info .first-info-content i {
 }
 main .info .first-info-content {
   height: 300px;
+  -webkit-animation-name: showContain;
+          animation-name: showContain;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 main .about {
   height: 800px;
@@ -350,6 +367,10 @@ main .about .company-about {
   flex-direction: column;
   justify-content: center;
   float: left;
+  -webkit-animation-name: enterMainFont;
+          animation-name: enterMainFont;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   color: #BFC2CF;
 }
 main .about .company-about span {
@@ -396,6 +417,10 @@ main .about img {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-animation-name: immageFadein;
+          animation-name: immageFadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 main .services {
   height: 1200px;
@@ -514,6 +539,10 @@ main .pricing .fa-arrow-right {
   opacity: 0;
 }
 main .pricing-top {
+  -webkit-animation-name: enterFont;
+          animation-name: enterFont;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 60%;
   margin: auto;
 }
@@ -1124,4 +1153,82 @@ footer .fixed-arrow a i {
   padding: 20px;
   border-radius: 50%;
   background-color: #19191C;
+}
+
+@-webkit-keyframes enterFont {
+  from {
+    font-size: 10px;
+    opacity: 0;
+  }
+  to {
+    width: 70%;
+    opacity: 1;
+  }
+}
+
+@keyframes enterFont {
+  from {
+    font-size: 10px;
+    opacity: 0;
+  }
+  to {
+    width: 70%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showContain {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 300px;
+  }
+}
+@keyframes showContain {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 300px;
+  }
+}
+@-webkit-keyframes immageFadein {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+@keyframes immageFadein {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes enterMainFont {
+  from {
+    font-size: 10px;
+    opacity: 0;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+@keyframes enterMainFont {
+  from {
+    font-size: 10px;
+    opacity: 0;
+  }
+  to {
+    width: 50%;
+    opacity: 1;
+  }
 }

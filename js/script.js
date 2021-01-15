@@ -127,6 +127,9 @@ const app = new Vue({
       },
     ],
     classIndex: null,
+    animationTop: false,
+    animationAbout:false,
+    animationPrice: false,
   },
 
   methods: {
@@ -137,9 +140,18 @@ const app = new Vue({
       this.classIndex = null;
     },
     updateScroll() {
-      this.scrollPosition = window.scrollY
-      // console.log(this.scrollPosition);
-    }
+      this.scrollPosition = window.scrollY;
+      if (this.scrollPosition > 150) {
+        this.animationTop = true
+      }
+      if (this.scrollPosition > 700) {
+        this.animationAbout = true
+      }
+      if (this.scrollPosition > 2800) {
+        this.animationPrice = true
+      }
+    },
+
   },
 
   mounted() {

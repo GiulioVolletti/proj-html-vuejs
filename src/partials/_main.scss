@@ -1,6 +1,12 @@
 main {
   h1 {
     font-size: 50px;
+    &:first-child {
+      font-size: 80px;
+      font-weight: 900;
+      animation-name: enterFont;
+      animation-duration: 2s;
+    }
   }
   // top main
   .wrapper-main {
@@ -18,11 +24,14 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
+        animation-name: enterFont;
+        animation-duration: 2s;
         h3 {
           color: $contactColor;
           width: 60%;
           padding: 25px 0;
           margin-bottom: 25px;
+          font-weight: 100;
         }
       }
     }
@@ -39,6 +48,8 @@ main {
       @include containerForElement;
       &-content{
         height: 300px;
+        animation-name: showContain;
+        animation-duration: 1s;
       }
     }
   }
@@ -76,6 +87,8 @@ main {
       flex-direction: column;
       justify-content: center;
       float: left;
+      animation-name: enterMainFont;
+      animation-duration: 1s;
       @include companyMainTextStile;
       .mini-contain {
         margin-top: 50px;
@@ -106,6 +119,8 @@ main {
       height: 100%;
       object-fit: cover;
       overflow: hidden;
+      animation-name: immageFadein;
+      animation-duration: 1s;
     }
   }
 
@@ -188,6 +203,8 @@ main {
       opacity: 0;
     }
     &-top{
+      animation-name: enterFont;
+      animation-duration: 1s;
       width: 60%;
       margin: auto;
     }
