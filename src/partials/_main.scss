@@ -45,6 +45,29 @@ main {
 
   .about {
     height: 800px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 150px;
+      height: 60px;
+      background-image: url("../img/texture_point.png");
+      background-size: cover;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      opacity: 0.3;
+    }
+    &::before {
+      content: "";
+      width: 150px;
+      height: 60px;
+      background-image: url("../img/texture_point.png");
+      background-size: cover;
+      position: absolute;
+      bottom: -7.5%;
+      right: 42%;
+      transform: translate(-50%, -50%);
+      opacity: 0.3;
+    }
     .company-about {
       padding: 30px 45px 30px 0;
       width: 50%;
@@ -366,6 +389,7 @@ main {
             background-color: #ECECEC;
             border-radius: 5px;
             border: 0;
+            resize: none;
             &:focus {
               outline: none;
             }
@@ -383,6 +407,12 @@ main {
             &:focus {
               outline: none;
               font-family: "Poppins", sans-serif;
+            }
+            &:first-child {
+              background-image: url("../img/image_1_placeholder.png");
+              background-repeat: no-repeat;
+              background-position: 95% 50%;
+              cursor: pointer;
             }
           }
           select {

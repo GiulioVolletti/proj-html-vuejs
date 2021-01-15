@@ -326,10 +326,8 @@
               <a class="btn btn-trasparent" href="#">View Map</a>
             </div>
           </div>
-
         </section>
         <!-- /form -->
-
       </main>
       <!-- /main -->
 
@@ -356,7 +354,7 @@
             <div class="footer-contain-black">
               <h1>About</h1>
               <ul>
-                <li v-for="listone in footerLinkAbout"><a :href="listone.url"><i class="fas fa-chevron-right"></i> {{listone.name}}</a> </li>
+                <li v-for="(listone, index) in footerLinkAbout"><a @mouseover="mouseEnterClassChange(index)" @mouseleave = "mouseLeave" :href="listone.url"><i :class="{'fa-angle-double-right': classIndex == index, 'fa-chevron-right': classIndex != index}" class="fas "></i> {{listone.name}}</a> </li>
               </ul>
             </div>
             <!-- /about -->

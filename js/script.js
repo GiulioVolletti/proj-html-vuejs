@@ -109,9 +109,17 @@ const app = new Vue({
         url: "#",
       },
     ],
+    classIndex: null,
   },
 
   methods: {
+    mouseEnterClassChange (position){
+      this.classIndex = position;
+      // console.log(this.classIndex);
+    },
+    mouseLeave () {
+      this.classIndex = null;
+    },
     updateScroll() {
       this.scrollPosition = window.scrollY
       // console.log(this.scrollPosition);
